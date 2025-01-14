@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Job Profile</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Job Profile Page</h1>
+            <form action="#" method="post">
+                <div>
+                    <label for="designation">Designation:</label>
+                    <select id="designation" name="designation" required>
+                        <option value="">--Select--</option>
+                        <option value="manager">Manager</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="analyst">Analyst</option>
+                        <option value="intern">Intern</option>
+                    </select>
+                    <h2 class="section-title">Organisation Details</h2>
+                    <label for="org-name">Organisation Name:</label>
+                    <input type="text" id="org-name" name="org-name" required>
+    
+                    <label for="org-logo">Upload Organisation Logo:</label>
+                    <input type="file" id="org-logo" name="org-logo" accept="image/*">
+                </div>
+    
+                <div>
+                    <h2 class="section-title">Personal Details</h2>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+    
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" name="middle-name">
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+    
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" required>
+    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">--Select--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+    
+                    <label for="marital-status">Marital Status:</label>
+                    <select id="marital-status" name="marital-status" required>
+                        <option value="">--Select--</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="other">Other</option>
+                    </select>
+    
+                    <label for="perm-address">Permanent Address:</label>
+                    <textarea id="perm-address" name="perm-address" rows="3" required></textarea>
+    
+                    <label for="corr-address">Correspondence Address:</label>
+                    <textarea id="corr-address" name="corr-address" rows="3"></textarea>
+    
+                    <label for="aadhar">Aadhar Card Number:</label>
+                    <input type="text" id="aadhar" name="aadhar" required pattern="\d{12}" title="Enter a valid 12-digit Aadhar number">
+                </div>
+
+                <div>
+                    <h2 class="section-title">Academic Details</h2>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="academic" value="10th"> 10th
+                        </label>
+                        <label>
+                            <input type="checkbox" name="academic" value="12th"> 12th
+                        </label>
+                        <label>
+                            <input type="checkbox" name="academic" value="graduation"> Graduation
+                        </label>
+                        <label>
+                            <input type="checkbox" name="academic" value="post-graduation"> Post Graduation
+                        </label>
+                        <label>
+                            <input type="checkbox" name="academic" value="other"> Any Other
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="section-title">Uploads</h2>
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                    <label for="photo-location">Photo Location:</label>
+                    <input type="text" id="photo-location" name="photo-location" required>
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+                    <label for="other-docs">Upload Other Documents:</label>
+                    <input type="file" id="other-docs" name="other-docs" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                </div>
+
+    
+                <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
